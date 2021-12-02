@@ -67,6 +67,7 @@ $(document).ready(function(){
                             $('#success').fadeIn()
                             $('.modal').modal('hide');
 		                	$('#success').modal('show');
+                            console.log('Send MAil');
                         })
                     },
                     error: function() {
@@ -74,6 +75,7 @@ $(document).ready(function(){
                             $('#error').fadeIn()
                             $('.modal').modal('hide');
 		                	$('#error').modal('show');
+                            console.log("Didnt send the mail");
                         })
                     }
                 })
