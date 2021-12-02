@@ -16,7 +16,7 @@
     $subject = "You have a message from your Portfolio Site.";
 
     $logo = 'img/logo.png';
-    $link = '#';
+    $link = 'https://reagankieti.github.io/';
 
 	$body = "<!DOCTYPE html><html lang='en'><head><meta charset='UTF-8'><title>Portfolio Mail</title></head><body>";
 	$body .= "<table style='width: 100%;'>";
