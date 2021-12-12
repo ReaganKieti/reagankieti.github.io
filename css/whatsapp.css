@@ -1,0 +1,419 @@
+/* ======================================================= 
+ *
+ *    Demo
+ *    By castlecode
+ *
+ *    Contact: http://codecanyon.net/user/castlecode
+ *
+ *    Copyright (c) 2013, castlecode. All rights reserved.
+ *    Available only in http://codecanyon.net/
+ *    
+ *    ---------------------------------
+ *    CONTENTS
+ *    ---------------------------------
+ *    
+ *    (1) GRAPHIC STYLE (Play around in this section)
+ *
+ *      [1] MAIN STUFF
+ *      [2] WELCOME SECTION
+ *      [3] CONTENT
+ *      [4] USAGE EXAMPLES
+ *      [5] FEATURES
+ *      [6] FOOTER
+ *      [7] TO TOP
+ *      [8] RESPONSIVE DESIGN
+ *    
+ * ======================================================= */
+
+
+/* ====================================================================== *
+      [1] MAIN STUFF
+ * ====================================================================== */
+	
+	html {
+    	margin-right: 0;
+    	overflow: visible;
+	}
+	
+	body{
+		font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+
+	h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+		font-family: 'Open Sans';
+		font-weight: 500;
+	}
+
+	::selection {
+	    background: #26C281;
+	    color: #fff;
+	}
+
+/* ====================================================================== *
+      [2] WELCOME SECTION
+ * ====================================================================== */
+
+	.welcome-section{
+		width: 100%;
+		background: rgba(38, 194, 129, 0.2);;
+		text-align: center;
+	}
+
+	.welcome-section-content{
+		display: inline-block;
+		padding: 150px 0;
+		text-align: center;
+		color: #333333;
+		width: 768px;
+	}
+
+	.welcome-section img{	
+		width: 200px;
+		float: right;
+		margin-left: 40px;
+	}
+
+	.welcome-section .welcome-section-content h2{
+		line-height: 45px;
+		font-family: 'Montserrat', sans-serif;
+	    font-weight: 400;
+	    font-size: 45px;
+	    margin-bottom: 40px;
+	    margin-top: 0 !important;
+	    padding-top: 20px;
+	}
+
+	.welcome-section .welcome-section-content h2 small{
+		font-size: 16px;
+		color: #333333;
+		display: block;
+		margin-top: 5px;
+	}
+
+	.welcome-section .welcome-section-content p{
+		font-size: 17px;
+		line-height: 1.8;
+		padding: 0 20px;
+		font-weight: 300;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.welcome-section-content{
+			text-align: center;
+			width: auto;
+		}
+
+		.welcome-section .welcome-section-content h2{
+			font-size: 30px;
+			line-height: 30px;
+			padding-top: 0;
+		}
+
+		.welcome-section .welcome-section-content p{
+			font-size: 17px;
+		}
+
+		.welcome-section .welcome-section-content p br, 
+		.welcome-section img{
+			display: none;
+		}
+	}
+
+	.browse,
+	.browse:focus,
+	.browse:hover,
+	.browse:active{
+		text-decoration: none !important;
+		display: inline-block;
+		margin: 5px;
+		padding: 15px 45px;
+		font-size: 13px;
+		font-weight: 700;
+
+		-webkit-border-radius: 2px;
+		   -moz-border-radius: 2px;
+		     -o-border-radius: 2px;
+		        border-radius: 2px;
+
+		-webkit-transition: all 0.1s ease;
+	       -moz-transition: all 0.1s ease;
+	         -o-transition: all 0.1s ease;
+	            transition: all 0.1s ease;
+	}
+	.browse,
+	.browse:focus{
+		color: #333333;
+		border: 2px solid #333333;
+		background: transparent;
+	}
+
+	.browse:hover,
+	.browse:active{
+		border: 2px solid #333333;
+	    background: #333333;
+	    color: #fff;
+	}
+
+	.welcome-section-buttons{
+		margin-top: 30px;
+	}
+
+/* ====================================================================== *
+      [3] CONTENT
+ * ====================================================================== */
+
+	.content{
+		width: 1200px;
+		max-width: 100%;
+		margin: auto;
+	}
+
+	.grid-section hr{
+		width: 80%;
+		margin: auto;
+		border-color: rgba(38, 194, 129, 0.2);
+		margin-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	.content_section{
+		margin-bottom: 70px;
+	}
+
+	.content_section h2{
+		font-family: 'Montserrat', sans-serif;
+	    font-weight: 400;
+	    font-size: 34px;
+	    margin-bottom: 10px;
+	    margin-top: 0 !important;
+	}
+
+	.content_section p{
+		color: #999999;
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+	.section{
+		background: #fff;
+		width: 100%;
+		padding: 100px 0;
+	}
+
+	.content>p{
+		color: #575757;
+		margin-bottom: 0;
+	}
+
+	.grid-section{
+		background-repeat: no-repeat;
+	    background-size: 100% 100%;
+		/*background: rgb(250, 250, 250);*/
+		background: #f5f6fa;
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	
+	.animate-on-load{
+		opacity: 0;
+	}
+
+	.headline{
+		text-align: center;
+		margin-bottom: 80px;
+	}
+
+	.headline h2{
+	    font-family: 'Montserrat', sans-serif;
+	    font-weight: 400;
+	    font-size: 34px;
+	    margin-bottom: 40px;
+	    margin-top: 0 !important;
+	}
+
+	.headline p{
+		color: #999999;
+		font-size: 18px;
+	}
+
+	.row .col-sm-6:first-child{
+		padding-right: 30px;
+	}
+	.row .col-sm-6:last-child{
+		padding-left: 30px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		.row .col-sm-6:first-child{
+			padding-right: 15px;
+		}
+		.row .col-sm-6:last-child{
+			padding-left: 15px;
+		}
+	}
+
+	label small{
+		color: #999999;
+	    font-weight: 600;
+	    display: block;
+	}
+
+/* ====================================================================== *
+      [4] USAGE EXAMPLES
+ * ====================================================================== */
+
+	.usage_examples{
+		width: 400px;
+		margin: auto;
+		max-width: 100%;
+		padding: 0 10px;
+	}
+
+	.usage_example{
+		opacity: .6;
+		cursor: pointer;
+
+		-webkit-transition: opacity 0.3s;
+        -moz-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+	}
+
+	.usage_example:hover{
+		opacity: .9;
+	}
+
+	.usage_example_label{
+		background: rgba(38, 194, 129, 0.2);
+		padding: 7px;
+		font-weight: 600;
+	}
+
+	.usage_examples img{
+		width: 100%;
+		border: 2px solid rgba(38, 194, 129, 0.2);
+	}	
+
+/* ====================================================================== *
+      [5] FEATURES
+ * ====================================================================== */
+
+	.features-container{
+		overflow: hidden;
+	}
+
+	.features-container .row{
+		text-align: center;
+	}
+
+	.features-container i{
+		color: #26C281;
+		font-size: 25px;
+	}
+
+	.features-container h4{
+		font-size: 17px;
+		font-weight: 600;
+		margin: 0 0 20px 0;
+		color: rgb(51, 51, 51);
+	}
+
+	.features-container p{
+		margin-bottom: 50px;
+		color: #777;
+		font-size: 14px;
+		line-height: 26.6px;
+		font-weight: 300;
+	}
+
+	.features-container .row:last-child{
+		margin-bottom: -50px;
+	}
+
+	.col-md-6{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.features{
+		color:rgb(88, 88, 88);
+	}
+
+	.feature-icon{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.feature-text{
+		padding: 0 20px;
+	}
+
+/* ====================================================================== *
+      [6] FOOTER
+ * ====================================================================== */
+	
+	.footer{
+		padding-top: 20px !important;
+		padding-bottom: 20px !important;
+		border: none !important;
+		color: #777777;
+		background-color: rgb(22, 22, 22);
+		font-weight: 300;
+	}
+
+	.footer a{
+		color: #999;
+		text-decoration: none !important;
+	}
+
+/* ====================================================================== *
+      [7] TO TOP
+ * ====================================================================== */
+	
+	.fixed{
+		position: fixed;
+		right: 24px;
+		bottom: 0px;
+		display: none;
+		z-index: 999;
+	}
+
+	.to-top{
+		height: 36px;
+		line-height: 36px;
+		width: 42px;
+		background-color: rgba(0,0,0,.8);
+		color: #fff;
+		cursor: pointer;
+		text-align: center;
+		font-size: 12px;
+
+		-webkit-border-radius: 3px 3px 0 0;
+		   -moz-border-radius: 3px 3px 0 0;
+		     -o-border-radius: 3px 3px 0 0;
+		        border-radius: 3px 3px 0 0;
+
+		-webkit-transition: all 0.2s;
+		   -moz-transition: all 0.2s;
+		    -ms-transition: all 0.2s;
+		     -o-transition: all 0.2s;
+		        transition: all 0.2s;        
+	}
+
+	.to-top i{
+		margin-top: 10px;
+	}
+
+	.to-top:hover{
+		background-color: #e54e53 !important;
+	}
+
+/* ====================================================================== *
+      [8] RESPONSIVE DESIGN
+ * ====================================================================== */
+
+	@media only screen and (max-width: 1200px) {
+		.content{
+			width: 100%;
+			padding: 0px 10px !important;
+		}	
+	}
